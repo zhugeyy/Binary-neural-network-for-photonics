@@ -97,6 +97,8 @@ dataset_root/
 
 ## ⚠️ Notes
 
+---
+
 * Code runs in **CPU-only mode by default**
 * Compatible with **TensorFlow 1.x + Keras backend**
 * GPU usage may require additional configuration
