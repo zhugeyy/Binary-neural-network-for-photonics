@@ -1,5 +1,3 @@
-# Binary-neural-network-for-photonics
-This repository provides a clean and unified implementation of Binarized Neural Networks (BNNs) using Keras (TensorFlow backend), supporting both standard datasets and custom image datasets.
 # Binarized Neural Networks (BNN) in Keras
 
 This repository provides a clean and unified implementation of **Binarized Neural Networks (BNNs)** using Keras (TensorFlow backend), supporting both standard datasets and custom image datasets.
@@ -20,8 +18,8 @@ Two example applications are included:
 
 | Script         | Description                        |
 | -------------- | ---------------------------------- |
-| `mnist_bnn.py` | BNN for MNIST digit classification |
-| `mir_bnn.py`   | BNN for custom MIR image dataset   |
+| `BNN_MNIST.py` | BNN for MNIST digit classification |
+| `BNN_MIR_image.py`   | BNN for custom MIR image dataset   |
 
 ---
 
@@ -71,7 +69,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn pillow
 ### MNIST Example
 
 ```bash
-python mnist_bnn.py
+python BNN_MNIST.py
 ```
 
 ---
@@ -79,7 +77,7 @@ python mnist_bnn.py
 ### MIR Dataset Example
 
 ```bash
-python mir_bnn.py --data "path/to/dataset"
+python BNN_MIR_image.py --data "path/to/dataset"
 ```
 
 ---
@@ -94,26 +92,6 @@ dataset_root/
     testing_image/
         class1/
         class2/
-```
-
----
-
-## 📊 Example Results
-
-The model typically achieves:
-
-* MNIST accuracy: ~97–98% (depending on config)
-* Fast convergence with binary constraints
-
----
-
-## 🔬 Research Context
-
-This implementation is designed for:
-
-* Low-power neural networks
-* Hardware-aware AI (e.g., photonic computing)
-* Probabilistic computing with noise
 
 ---
 
@@ -123,24 +101,3 @@ This implementation is designed for:
 * Compatible with **TensorFlow 1.x + Keras backend**
 * GPU usage may require additional configuration
 
----
-
-## 📌 Future Work
-
-* Convolutional BNN support
-* FPGA / photonic hardware mapping
-* Integration with probabilistic neural networks (PBNN)
-
----
-
-## 📄 License
-
-MIT License
-
----
-
-## 🙋 Contact
-
-Author: Your Name
-Affiliation: National University of Singapore (NUS)
-Email: [your_email@nus.edu.sg](mailto:your_email@nus.edu.sg)
